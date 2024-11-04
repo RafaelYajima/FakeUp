@@ -1,0 +1,122 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="font-inter bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white border-r border-gray-200">
+            <div class="p-4 flex items-center border-b border-gray-200">
+                <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-white">R</div>
+                <div class="ml-4">
+                    <div class="font-semibold">Rafael Hideki ...</div>
+                </div>
+            </div>
+            <nav class="p-4">
+                <ul>
+                    <li class="mb-2"><a href="inicio.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-home mr-2"></i>Início</a></li>
+                    <li class="mb-2"><a href="caixaDeEntrada.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-inbox mr-2"></i>Caixa de entrada</a></li>
+                    <li class="mb-2"><a href="documentos.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-file-alt mr-2"></i>Documentos</a></li>
+                    <li class="mb-2"><a href="paineis.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-chart-pie mr-2"></i>Painéis</a></li>
+                    <li class="mb-2"><a href="clipes.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-paperclip mr-2"></i>Clipes</a></li>
+                    <li class="mb-2"><a href="planilhasDeHoras.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-clock mr-2"></i>Planilhas de horas</a></li>
+                    <li class="mb-2"><a href="mais.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-ellipsis-h mr-2"></i>Mais</a></li>
+                </ul>
+                <div class="mt-4">
+                    <div class="text-gray-500 text-sm">Favoritos</div>
+                    <div class="mt-2 text-gray-700 text-sm">Clique em <i class="fas fa-star"></i> para adicionar favoritos à barra lateral <a href="#" class="text-blue-600">Saiba mais</a></div>
+                </div>
+                <div class="mt-4">
+                    <div class="text-gray-500 text-sm">Espaços</div>
+                    <ul class="mt-2">
+                        <li class="mb-2"><a href="#" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-globe mr-2"></i>Tudo</a></li>
+                        <li class="mb-2"><a href="index.html" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-folder mr-2"></i>Team Space</a></li>
+                        <li class="ml-6 mb-2"><a href="#" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-folder-open mr-2"></i>Projects</a></li>
+                        <li class="mb-2"><a href="#" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-eye mr-2"></i>Exibir todos os Espaços</a></li>
+                        <li class="mb-2"><a href="#" class="flex items-center text-gray-700 hover:text-blue-600"><i class="fas fa-plus mr-2"></i>Criar Espaço</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="p-4 border-t border-gray-200">
+                <button class="w-full bg-blue-600 text-white py-2 rounded">Convidar</button>
+                <button class="w-full mt-2 bg-gray-200 text-gray-700 py-2 rounded">Ajuda</button>
+            </div>
+        </div>
+
+        <div class="container mx-auto p-4">
+            <!-- Navigation -->
+            <nav class="flex justify-between items-center border-b pb-2">
+             <div class="flex space-x-4">
+              <a class="text-gray-600 hover:text-gray-800" href="#">
+               Caixa de entrada
+              </a>
+              <a class="text-gray-800 border-b-2 border-blue-500" href="#">
+               Importante
+              </a>
+              <a class="text-gray-600 hover:text-gray-800" href="#">
+               Outro
+              </a>
+              <a class="text-gray-600 hover:text-gray-800" href="#">
+               Adiada
+              </a>
+              <a class="text-gray-600 hover:text-gray-800" href="#">
+               Limpo
+              </a>
+             </div>
+             <div class="flex space-x-4">
+              <a class="text-gray-600 hover:text-gray-800" href="#">
+               <i class="fas fa-filter">
+               </i>
+               Filtro
+              </a>
+              <a class="text-gray-400" href="#">
+               Apagar tudo
+              </a>
+              <a class="text-gray-600 hover:text-gray-800" href="#">
+               <i class="fas fa-cog">
+               </i>
+               Personalizar
+              </a>
+             </div>
+            </nav>
+            <!-- Main Content -->
+            <div class="text-center mt-20">
+             <i class="fas fa-inbox text-6xl text-gray-300 mb-4">
+             </i>
+             <h1 class="text-2xl font-semibold">
+              Caixa de entrada zerada
+             </h1>
+             <p class="text-gray-500">
+              Parabéns! Você limpou as notificações importantes
+              <i class="fas fa-party-popper">
+              </i>
+             </p>
+            </div>
+            <!-- Motivational Quote -->
+            <div class="text-center mt-20">
+             <div class="inline-block bg-gray-100 text-gray-500 px-4 py-2 rounded-full mb-4">
+              Citação motivacional
+             </div>
+             <blockquote class="text-lg italic text-gray-800">
+              "Minha missão na vida não é apenas sobreviver, mas prosperar. E fazer isso com um pouco de paixão, de compaixão, de humor e de estilo."
+              <br/>
+              <span class="font-semibold">
+               — Maya Angelou
+              </span>
+             </blockquote>
+            </div>
+            <!-- Floating Action Button -->
+            <div class="fixed bottom-4 right-4">
+             <button class="bg-gradient-to-r from-pink-500 to-purple-500 text-white p-4 rounded-full shadow-lg">
+              <i class="fas fa-magic">
+              </i>
+             </button>
+            </div>
+           </div>
+
+    </div>
+</body>
+</html>
