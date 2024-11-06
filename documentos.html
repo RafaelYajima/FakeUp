@@ -45,6 +45,131 @@
                 <button class="w-full mt-2 bg-gray-200 text-gray-700 py-2 rounded">Ajuda</button>
             </div>
         </div>
+
+        <div class="container mx-auto p-4">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <h1 class="text-xl font-semibold mb-4 md:mb-0">Documentos</h1>
+                <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                    <input type="text" placeholder="Pesquisar documentos" class="border border-gray-300 rounded px-4 py-2 w-full md:w-auto">
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded w-full md:w-auto">Criar documento <i class="fas fa-caret-down"></i></button>
+                </div>
+            </div>
+    
+            <!-- Sections -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-white p-6 rounded shadow">
+                    <h2 class="text-lg font-semibold mb-2">Recente</h2>
+                    <div class="flex flex-col items-center justify-center h-32">
+                        <i class="fas fa-file-alt text-4xl text-gray-400 mb-2"></i>
+                        <p class="text-gray-500 text-center">Seus documentos abertos recentemente serão exibidos aqui.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h2 class="text-lg font-semibold mb-2">Favoritos</h2>
+                    <div class="flex flex-col items-center justify-center h-32">
+                        <i class="fas fa-file-alt text-4xl text-gray-400 mb-2"></i>
+                        <p class="text-gray-500 text-center">Seus documentos favoritos serão exibidos aqui.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h2 class="text-lg font-semibold mb-2">Criados por mim</h2>
+                    <div class="flex flex-col items-center justify-center h-32">
+                        <i class="fas fa-file-alt text-4xl text-gray-400 mb-2"></i>
+                        <p class="text-gray-500 text-center">Todos os documentos criados por você serão exibidos aqui.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Create Wiki Section -->
+            <div class="bg-white p-6 rounded shadow mb-6">
+                <h2 class="text-lg font-semibold mb-4">Crie a primeira wiki</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="flex items-center space-x-4 p-4 border border-gray-300 rounded">
+                        <i class="fas fa-book text-2xl text-purple-600"></i>
+                        <div>
+                            <h3 class="font-semibold">Wiki da empresa</h3>
+                            <p class="text-gray-500">Wiki completa</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 p-4 border border-gray-300 rounded">
+                        <i class="fas fa-home text-2xl text-orange-500"></i>
+                        <div>
+                            <h3 class="font-semibold">Página inicial da empresa</h3>
+                            <p class="text-gray-500">Hub da intranet da empresa</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 p-4 border border-gray-300 rounded">
+                        <i class="fas fa-database text-2xl text-blue-500"></i>
+                        <div>
+                            <h3 class="font-semibold">Base de conhecimento</h3>
+                            <p class="text-gray-500">Centro de conhecimento da empresa</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 p-4 border border-gray-300 rounded">
+                        <i class="fas fa-users text-2xl text-green-500"></i>
+                        <div>
+                            <h3 class="font-semibold">Hub da equipe</h3>
+                            <p class="text-gray-500">Centro de colaboração da equipe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tabs and Table -->
+            <div class="bg-white p-6 rounded shadow">
+                <div class="flex flex-wrap space-x-0 md:space-x-6 border-b border-gray-200 mb-4">
+                    <button class="text-purple-600 border-b-2 border-purple-600 pb-2 w-full md:w-auto">Todos</button>
+                    <button class="text-gray-500 pb-2 w-full md:w-auto">Meus documentos</button>
+                    <button class="text-gray-500 pb-2 w-full md:w-auto">Compartilhado</button>
+                    <button class="text-gray-500 pb-2 w-full md:w-auto">Privado</button>
+                    <button class="text-gray-500 pb-2 w-full md:w-auto">Espaço de trabalho</button>
+                    <button class="text-gray-500 pb-2 w-full md:w-auto">Atribuído</button>
+                    <button class="text-gray-500 pb-2 w-full md:w-auto">Arquivado</button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="text-gray-500">
+                                <th class="py-2">Nome</th>
+                                <th class="py-2">Localização</th>
+                                <th class="py-2">Etiquetas</th>
+                                <th class="py-2">Data de atualização</th>
+                                <th class="py-2">Data de visualização</th>
+                                <th class="py-2">Compartilhamento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-gray-200">
+                                <td class="py-2 flex items-center space-x-2">
+                                    <i class="fas fa-lock text-gray-400"></i>
+                                    <span>Project Notes</span>
+                                    <span class="text-gray-400">2</span>
+                                </td>
+                                <td class="py-2"><i class="fas fa-folder text-gray-400"></i> Projects</td>
+                                <td class="py-2">-</td>
+                                <td class="py-2">abr 8</td>
+                                <td class="py-2">-</td>
+                                <td class="py-2"><i class="fas fa-share-alt text-gray-400"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <!-- Floating Buttons -->
+            <div class="fixed bottom-4 right-4 space-y-2">
+                <button class="bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Perguntas e respostas do espaço de trabalho</span>
+                </button>
+                <button class="bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                    <i class="fas fa-search"></i>
+                    <span>Pesquise qualquer coisa</span>
+                </button>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
